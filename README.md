@@ -47,7 +47,7 @@ fn main() -> std::io::Result<()> {
 ```
 ### Testing with QEMU
 
-````bash
+```bash
 cargo build
 
 # Run with QEMU (AArch64)
@@ -56,7 +56,7 @@ qemu-system-aarch64 -M virt -cpu cortex-a53 -kernel output.elf -semihosting
 
 ### Current Features to Implement
 
-- [] Symbol resolution
+- [x] Symbol resolution
 - [] Relocation processing
 - [] Section merging
 - [] Debug information support
